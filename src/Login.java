@@ -55,7 +55,7 @@ public class Login extends JFrame {
             JOptionPane.showMessageDialog(this, "Login successful!");
         } else if(userID.equals(userID_3) && password.equals(password_3)) {
             Lecturer object = new Lecturer();
-            object.initComponents();
+//            object.initComponents();
             JOptionPane.showMessageDialog(this, "Login successful!");
         } else {
             JOptionPane.showMessageDialog(this, "Invalid user ID or password.", "Login Failed", JOptionPane.ERROR_MESSAGE);

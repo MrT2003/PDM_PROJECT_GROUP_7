@@ -15,7 +15,6 @@ public class Student extends JFrame{
     private JComboBox<String> comboBox1;
     private JButton searchButton;
     private JTextField textField1;
-
     private Connection con;
     private PreparedStatement pst;
 
@@ -24,7 +23,7 @@ public class Student extends JFrame{
 
     public Student() {
         connect();
-        table_load();
+//        table_load();
 
         // Define the fields to populate in the comboBox1
         String[] displayFields = {"Examination", "Student Grade", "View"};
