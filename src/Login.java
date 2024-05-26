@@ -23,6 +23,7 @@ public class Login extends JFrame {
     private static final String password_2 = "1234";
     private static final String userID_3 = "ITL21241";
     private static final String password_3 = "1234";
+//    private JPanel panel1;
 
 
 
@@ -46,7 +47,7 @@ public class Login extends JFrame {
     public void loginActionPerformed(java.awt.event.ActionEvent evt){
         setVisible(false);
         String userID = jTextField1.getText();
-        String password = jTextField2.getText();
+        String password = jPasswordField2.getText();
 
         if(userID.equalsIgnoreCase(userID_2) && password.equals(password_2)) {
             Student object = new Student();
@@ -90,7 +91,7 @@ public class Login extends JFrame {
         jLabel1 = new JLabel();
         jLabel2 = new JLabel();
         jTextField1 = new  RoundedTextField(20);
-        jTextField2 = new RoundedTextField(20);
+        jPasswordField2 = new RoundedPasswordField(20);
         jButton1 = new JButton();
         jLabel3 = new JLabel("",SwingConstants.CENTER);
         jLabel4 = new JLabel();
@@ -128,12 +129,12 @@ public class Login extends JFrame {
         });
 
 
-        jTextField2.setText("Type your password");
-        jTextField2.setForeground(new Color(121, 121, 121));
-        jTextField2.setToolTipText("");
-        jTextField2.setPreferredSize(new Dimension(100,100));
-        jTextField2.setBackground(new Color(239, 233, 233));
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jPasswordField2.setText("Type your password");
+        jPasswordField2.setForeground(new Color(121, 121, 121));
+        jPasswordField2.setToolTipText("");
+        jPasswordField2.setPreferredSize(new Dimension(100,100));
+        jPasswordField2.setBackground(new Color(239, 233, 233));
+        jPasswordField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 inputPassword(evt);
             }
@@ -193,7 +194,7 @@ public class Login extends JFrame {
                                 .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel2)
                                         .addGap(10)
-                                        .addComponent(jTextField2, GroupLayout.PREFERRED_SIZE, 300, GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jPasswordField2, GroupLayout.PREFERRED_SIZE, 300, GroupLayout.PREFERRED_SIZE))
                                 .addComponent(jButton1, GroupLayout.PREFERRED_SIZE, 80, GroupLayout.PREFERRED_SIZE)
                                 .addGroup(layout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE) // Khoảng trống để căn phải
@@ -217,7 +218,7 @@ public class Login extends JFrame {
                                         .addComponent(jLabel1))
                                 .addGap(28, 28, 28)
                                 .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField2, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jPasswordField2, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel2))
                                 .addGap(30, 30, 30)
                                 .addComponent(jButton1, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE)
@@ -282,7 +283,7 @@ public class Login extends JFrame {
     private JLabel jLabel5;
     private JPanel jPanel1;
     private JTextField jTextField1;
-    private JTextField jTextField2;
+    private JPasswordField jPasswordField2;
 
 
     // End of variables declaration
