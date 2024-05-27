@@ -18,39 +18,20 @@
       </component>
       <component id="ddb4f" class="javax.swing.JTextField" binding="textField1" default-binding="true">
         <constraints>
-          <grid row="2" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <component id="f0c46" class="javax.swing.JButton" binding="signOutButton" default-binding="true">
-        <constraints>
-          <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-65536"/>
-          <enabled value="true"/>
-          <font/>
-          <foreground color="-10525857"/>
-          <hideActionText value="false"/>
-          <text value="Sign out"/>
-        </properties>
-      </component>
-      <component id="5bd37" class="javax.swing.JButton" binding="executeButton">
-        <constraints>
-          <grid row="2" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Execute"/>
-        </properties>
-      </component>
       <component id="de10a" class="javax.swing.JLabel">
         <constraints>
-          <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="91" height="17"/>
+          </grid>
         </constraints>
         <properties>
-          <font name="Arial Rounded MT Bold" size="22" style="1"/>
+          <font size="20" style="1"/>
           <text value="Hello lecturer"/>
         </properties>
       </component>
@@ -68,7 +49,7 @@
           <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Choose table"/>
+          <text value="Choose Field"/>
         </properties>
       </component>
       <component id="8d868" class="javax.swing.JComboBox" binding="selectField">
@@ -85,11 +66,27 @@
           <text value=""/>
         </properties>
       </component>
-      <hspacer id="c26c4">
+      <component id="f0c46" class="javax.swing.JButton" binding="signOutButton" default-binding="true">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
-      </hspacer>
+        <properties>
+          <background color="-65536"/>
+          <enabled value="true"/>
+          <font style="1"/>
+          <foreground color="-786458"/>
+          <hideActionText value="false"/>
+          <text value="Sign out"/>
+        </properties>
+      </component>
+      <component id="5bd37" class="javax.swing.JButton" binding="executeButton">
+        <constraints>
+          <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Execute"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>
